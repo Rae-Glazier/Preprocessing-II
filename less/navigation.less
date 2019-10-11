@@ -1,1 +1,37 @@
 // Navigation Styles here
+.navBar{ //open navBar big div
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    background: @sandy-beach;
+    padding: 1%;
+
+    nav { //opens nav
+      display: flex;  
+      justify-content: space-between;
+      width: 100%;
+      padding: 1%;
+
+      h1 { // opens heading 
+        width: 100%;
+        margin: 1%;
+        text-align: center;
+      } // closes heading 
+
+      ul { // opens list
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.8rem;
+        margin: 1%;
+        width: 50%;
+      } // closes list
+    } // closes nav
+    @media @mobile { //media querry open
+      nav { //nav open
+       flex-direction: column;
+       
+       ul { // ul open
+         width: 100%;
+       } //ul close
+      } //nav close
+    } //media querry close
+} // closes navBar big div
