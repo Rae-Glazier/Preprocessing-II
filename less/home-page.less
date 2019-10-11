@@ -1,5 +1,5 @@
 
-.welcome {
+.welcome { // header open
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,11 +8,11 @@
   border-bottom: 2px dashed silver;
   padding-bottom: 1%;
 
-  h2{
+  h2{ //heading open
     padding-top: 2%;
-  }
+  } // heading close
   
-}
+} // header close
 
 .home {
 
@@ -63,15 +63,20 @@
     }
   }
 
-  .content-pick {
+  .content-pick { //.content-pick open
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
-    .destination {
+    .destination { //.destination open
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
+
+      .btn{ //button open 
+        .custom-btn(@button-bg, 50%, @white);
+        
+      } //button close
+    } //.destination close
+  } //.content-pick close
 }// home
