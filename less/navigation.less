@@ -1,4 +1,31 @@
 // Navigation Styles here
-nav {
-   
-}
+.navBar{ //open navBar big div
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    background: @sandy-beach;
+    padding: 1%;
+    
+    
+    nav { //opens nav
+      display: flex;  
+      justify-content: space-between;
+      margin: 21;
+      width: 100%;
+      padding: 1%;
+
+      h1 { // opens heading 
+        width: 100%;
+        margin: 1%;
+        text-align: center;
+      } // closes heading 
+
+      
+      ul { // opens list
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.8rem;
+        margin: 1%;
+        width: 50%;
+      } // closes list
+    } // closes nav
+} // closes navBar big div
